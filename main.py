@@ -172,7 +172,6 @@ def run():
 
     with st.sidebar:
         st.title("SPENT MONEY :blue[PREDICTION]")
-        st.image("imgs/money.png", caption="", width=60)
         page = option_menu(
             menu_title=None,
             options=['Home', 'Relations & Correlarions', 'Prediction'],
@@ -295,17 +294,12 @@ def run():
                                 predicted_col, score_col = st.columns(2)
 
                                 with predicted_col:
-                                    st.image("imgs/money-bag.png",
-                                             caption="", width=70)
-
                                     st.subheader(
                                         "Expected To Spent")
                                     st.subheader(
                                         f"${np.round(predicted_value[0], 2)}")
 
                                 with score_col:
-                                    st.image("imgs/star.png",
-                                             caption="", width=70)
                                     st.subheader("Model Accuracy")
                                     st.subheader(f"{np.round(98.27, 2)}%")
 
@@ -358,8 +352,7 @@ def run():
                                     with col1:
                                         test_score = np.round(
                                             model.score(X_test, y_test) * 100, 2)
-                                        prediction.creat_matrix_score_cards("imgs/star.png",
-                                                                            "Prediction Accuracy",
+                                        prediction.creat_matrix_score_cards("Prediction Accuracy",
                                                                             test_score,
                                                                             True
                                                                             )
@@ -367,8 +360,7 @@ def run():
                                     with col2:
                                         mae = mean_absolute_error(
                                             y_test, all_predicted_values)
-                                        prediction.creat_matrix_score_cards("imgs/sort.png",
-                                                                            "Error Ratio",
+                                        prediction.creat_matrix_score_cards("Error Ratio",
                                                                             np.round(
                                                                                 mae, 2),
                                                                             False)
