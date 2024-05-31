@@ -10,10 +10,7 @@ pd.set_option('future.no_silent_downcasting', True)
 pd.options.mode.copy_on_write = "warn"
 
 
-def creat_matrix_score_cards(card_image="", card_title="Card Title", card_value=None, percent=False):
-    st.image(card_image,
-             caption="", width=70)
-
+def creat_matrix_score_cards(card_title="Card Title", card_value=None, percent=False):
     st.subheader(
         card_title)
 
