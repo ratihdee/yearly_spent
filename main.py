@@ -187,10 +187,10 @@ def run():
         st.write("***")  # Space
 
         st.subheader("""Contact Us:  """)
-        st.caption("""Vania Nita <vania.nita@office.ui.ac.id>""")
-        st.caption("""Ratih Dewi Herawati <ratih.dewi31@office.ui.ac.id>""")
-        st.caption("""Athifa Fajri Fahmawati <athifa.fajri@office.ui.ac.id>""")
-        st.caption("""Eriska Lisandia <eriska.lisandia31@office.ui.ac.id>""")
+        st.caption("""Vania Nita - <vania.nita@office.ui.ac.id>""")
+        st.caption("""Ratih Dewi H - <ratih.dewi31@office.ui.ac.id>""")
+        st.caption("""Athifa Fajri F - <athifa.fajri@office.ui.ac.id>""")
+        st.caption("""Eriska L - <eriska.lisandia31@office.ui.ac.id>""")
 
         # Overview Page
         if page == "Overview":
