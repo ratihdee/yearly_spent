@@ -170,8 +170,7 @@ def run():
     content = st.container()
 
     with st.sidebar:
-        # st.title("CUSTOMER ANNUAL SPENT : blue[PREDICTION]")
-        st.markdown("<h1 style='color: #0056B3; font-weight: bold;'>CUSTOMER ANNUAL SPENT PREDICTION</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='color: #0056B3; font-weight: bold;'>PREDICTION MENU</h1>", unsafe_allow_html=True)
         page = option_menu(
             menu_title=None,
             options=['Overview', 'Prediction'],
@@ -200,10 +199,11 @@ def run():
                           
                 st.subheader("What You'll Find Here")
                 
-                st.caption("""The purpose of this page is to make predictions or forecasts about annual customer spending based on the latest input data. 
+                st.caption("""The purpose of this page is to make predictions or forecasts about annual customer spending based on the latest input data. \n\
                 We analyze key engagement metrics such as the average duration of sessions on the mobile app and website (Average Session Length), 
                 total usage time of the mobile app (Time on App), total time spent on the website (Time on Website), and the length of customer membership 
-                in months (Length of Membership). This analysis not only predicts each customer's total yearly expenditure but also provides an overview 
+                in months (Length of Membership). \n\
+                This analysis not only predicts each customer's total yearly expenditure but also provides an overview 
                 of data descriptions and feature relationships, highlighting which variables most significantly impact spending predictions. 
                 The information generated will assist the company in making decisions regarding how to utilize their website and existing e-commerce 
                 application to enhance customer satisfaction and loyalty.
@@ -234,6 +234,18 @@ def run():
         if page == "Prediction":
             with header:
                 st.header("Prediction Model")
+                st.subheader("What You'll Find Here")
+                
+                st.caption("""The purpose of this page is to make predictions or forecasts about annual customer spending based on the input data. \n\
+                We analyze key engagement metrics such as the average duration of sessions on the mobile app and website (Avg_Session_Length), 
+                total usage time of the mobile app (App_Usage), total time spent on the website (Website_Usage), and the length of customer membership 
+                in months (Membership_Length). \n\
+                This analysis not only predicts each customer's total yearly expenditure but also provides an overview 
+                of data descriptions and feature relationships, highlighting which variables most significantly impact spending predictions. 
+                The information generated will assist the company in making decisions regarding how to utilize their website and existing e-commerce 
+                application to enhance customer satisfaction and loyalty.
+                   """)
+                
                 prediction_option = option_menu(menu_title=None, options=["One Value", 'From File'],
                                                 icons=[" "]*4, menu_icon="cast", default_index=0,
                                                 orientation="horizontal", styles=sub_options_style)
