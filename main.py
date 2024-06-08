@@ -212,7 +212,7 @@ def run():
                         include="object").describe().T
                     st.table(data_stats)
 
-                st.subheader("Correlation Matrix")
+                st.subheader("Features Correlation")
 
                 st.plotly_chart(relations.create_heat_map(df),
                                 use_container_width=True)
