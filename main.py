@@ -78,7 +78,7 @@ def run():
             
          }
          div[data-testid=stSidebarContent] {
-         background-color: #FFFFFF;
+         background-color: #4ea6dd;
          border-right: 4px solid #222;
          padding: 8px!important
          
