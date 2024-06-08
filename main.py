@@ -130,7 +130,7 @@ def run():
 
         div[data-testid=stFormSubmitButton]> button{
             width: 40%;
-            background-color: #F5F5F5;
+            background-color: #333333;
             border: 2px solid #0079FF;
             padding: 18px;
             border-radius: 30px;
