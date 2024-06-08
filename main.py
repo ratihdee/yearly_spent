@@ -197,37 +197,27 @@ def run():
                 st.header('Customer Expected Annual Spend 📈💰')
 
             with content:
-                st.dataframe(df.sample(frac=0.25, random_state=35).reset_index(drop=True),
-                             use_container_width=True)
-
-                st.write("***")
-
-                st.subheader("Data Summary Overview 🧐")
+                st.subheader("Data Summary Overview")
 
                 len_numerical_data = df.select_dtypes(
                     include="number").shape[1]
                 len_string_data = df.select_dtypes(include="object").shape[1]
 
                 if len_numerical_data > 0:
-                    st.subheader("Numerical Data [123]")
+                    st.subheader("Numerical Data")
 
                     data_stats = df.describe().T
                     st.table(data_stats)
 
                 if len_string_data > 0:
-                    st.subheader("String Data [𝓗]")
+                    st.subheader("String Data")
 
                     data_stats = df.select_dtypes(
                         include="object").describe().T
                     st.table(data_stats)
 
-        # Relations & Correlations
-        if page == "Relations & Correlarions":
+                st.subheader("Relation & Correlations")
 
-            with header:
-                st.header("Correlations Between Data 📉🚀")
-
-            with content:
                 st.plotly_chart(relations.create_heat_map(df),
                                 use_container_width=True)
 
@@ -253,9 +243,10 @@ def run():
                 st.plotly_chart(relations.create_relation_scatter(
                     df, first_feature, second_feature), use_container_width=True)
 
+                
         if page == "Prediction":
             with header:
-                st.header("Prediction Model 💰🛍️")
+                st.header("Prediction Model")
                 prediction_option = option_menu(menu_title=None, options=["One Value", 'From File'],
                                                 icons=[" "]*4, menu_icon="cast", default_index=0,
                                                 orientation="horizontal", styles=sub_options_style)
