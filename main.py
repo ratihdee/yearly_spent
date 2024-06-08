@@ -122,7 +122,7 @@ def run():
         }
 
         div[data-baseweb=base-input]{
-            background-color: #111;
+            background-color: #F5F5F5;
             border: 4px solid #444;
             border-radius: 5px;
             padding: 5px;
@@ -130,7 +130,7 @@ def run():
 
         div[data-testid=stFormSubmitButton]> button{
             width: 40%;
-            background-color: #111;
+            background-color: #F5F5F5;
             border: 2px solid #0079FF;
             padding: 18px;
             border-radius: 30px;
