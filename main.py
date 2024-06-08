@@ -173,7 +173,7 @@ def run():
         st.title("SPENT MONEY :blue[PREDICTION]")
         page = option_menu(
             menu_title=None,
-            options=['Home', 'Prediction'],
+            options=['Overview', 'Prediction'],
             icons=['diagram-3-fill', 'bar-chart-line-fill', "cpu"],
             menu_icon="cast",
             default_index=0,
@@ -189,13 +189,20 @@ def run():
             else:
                 df = pd.read_csv(data_file)
 
-        # Home Page
-        if page == "Home":
+        # Overview Page
+        if page == "Overview":
 
             with header:
-                st.header('Customer Expected Annual Spend 📈💰')
+                st.header('Customer Spending Forecast')
 
             with content:
+            st.write("""
+                 Pada halaman ini, Anda dapat melihat overview terkini dari data yang telah diinput ke dalam sistem. 
+                 Halaman ini bertujuan untuk melakukan prediksi atau forecast tentang pengeluaran tahunan pelanggan 
+                 berdasarkan data terakhir yang diinput. Ini membantu dalam membuat keputusan yang lebih tepat dan 
+                 strategis berdasarkan tren dan pola pengeluaran pelanggan.
+                 """)
+                
                 st.subheader("Data Summary Overview")
 
                 len_numerical_data = df.select_dtypes(
