@@ -110,7 +110,6 @@ def run():
          div [data-testid=stImage]{
             text-align: center;
             display: block;
-            text-color: #FFFFFF;
             margin-left: auto;
             margin-right: auto;
             width: 100%;
@@ -120,6 +119,7 @@ def run():
             cursor: pointer;
             background-color: #F5F5F5;
             border: 2px solid #0079FF;
+            color: #FFFFFF
         }
 
         div[data-baseweb=base-input]{
