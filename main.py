@@ -182,11 +182,9 @@ def run():
         )
         st.write("***")
 
-                st.caption("""Ratih
-                Vania
-                Athifa
-                Eriska
-                   """)
+        st.caption("""Contact Us:  """)
+        st.caption("""a""")
+        st.caption("""cb""")
 
         # Overview Page
         if page == "Overview":
