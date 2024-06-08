@@ -21,7 +21,7 @@ def create_heat_map(the_df):
         aspect=1,
         color_continuous_scale="PuBu",
         title="Correlation Matrix",
-        height=650,
+        height=300,
     )
     fig.update_traces(
         textfont={
@@ -51,7 +51,7 @@ def create_scatter_matrix(the_df):
     fig = px.scatter_matrix(
         the_df,
         dimensions=the_df.select_dtypes(include="number").columns,
-        height=800,
+        height=300,
         color=the_df.iloc[:, -1],
         opacity=0.65,
         title="Scatter Plot Matrix",
