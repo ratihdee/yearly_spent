@@ -180,9 +180,11 @@ def run():
             default_index=0,
             styles=side_bar_options_style
         )
-        st.write("")  # Space
-        st.write("")  # Space
-        st.write("")  # Space
+        #st.write("")  # Space
+        #st.write("")  # Space
+        #st.write("")  # Space
+        st.markdown('<br><br><br><br><br><br>', unsafe_allow_html=True)  # Adjust the number of <br> for more or less space
+
         
 
         st.subheader("""Contact Us:  """)
