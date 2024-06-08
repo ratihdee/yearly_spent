@@ -197,14 +197,15 @@ def run():
 
             with content:
                           
-                st.subheader("Data Summary Overview")
+                st.subheader(" ")
                 
                 st.caption("""
            Ini adalah overview terkini dari data yang telah diinput ke dalam sistem. 
            Halaman ini bertujuan untuk melakukan prediksi atau forecast tentang pengeluaran tahunan pelanggan 
            berdasarkan data terakhir yang diinput. Informasi ini sangat penting untuk pengambilan keputusan strategis.
            """)
-
+                
+          st.subheader("Data Summary Overview")
                 len_numerical_data = df.select_dtypes(
                     include="number").shape[1]
                 len_string_data = df.select_dtypes(include="object").shape[1]
