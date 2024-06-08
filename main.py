@@ -155,9 +155,9 @@ def run():
     )
 
     side_bar_options_style = {
-        "container": {"padding": "0!important", "background-color": 'transparent'},
-        "icon": {"color": "white", "font-size": "18px"},
-        "nav-link": {"color": "white", "font-size": "16px", "text-align": "left", "margin": "0px", "margin-bottom": "15px"},
+        "container": {"padding": "0!important", "background-color": 'white'},
+        "icon": {"color": "black", "font-size": "18px"},
+        "nav-link": {"color": "black", "font-size": "16px", "text-align": "left", "margin": "0px", "margin-bottom": "15px"},
         "nav-link-selected": {"background-color": "#0079FF", "font-size": "15px"},
     }
 
