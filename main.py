@@ -329,7 +329,7 @@ def run():
                                 st.warning(
                                     "Please, Check That Your Test File Has The Mention Columns in The Same Order", icon="⚠️")
 
-                    with st.form("comaprison_form"):
+                    with st.form("comparison_form"):
 
                         if st.form_submit_button("Compare Predicted With Actual Values"):
                             st.info(
