@@ -154,7 +154,7 @@ def run():
     )
 
     side_bar_options_style = {
-        "container": {"padding": "0!important", "background-color": 'white'},
+        "container": {"padding": "0!important", "background-color": '#101010'},
         "icon": {"color": "black", "font-size": "18px"},
         "nav-link": {"color": "#333333", "font-size": "16px", "text-align": "left", "margin": "0px", "margin-bottom": "15px"},
         "nav-link-selected": {"background-color": "#0056B3", "font-size": "15px"},
@@ -199,7 +199,7 @@ def run():
                           
                 #st.subheader("What You'll Find Here")
                 st.write("")  # Space
-                st.caption("""This page displays the summary and relationships of the dataset we use as training data to generate accurate forecasts. /n
+                st.caption("""This page displays the summary and relationships of the dataset we use as training data to generate accurate forecasts.
                 In addition to obtaining forecast results related to spending on online site transactions, you can check the correlation and data summary. 
                 You can also upload your data on the sidebar menu to view the summary and correlation of your data here!
                    """)
@@ -230,13 +230,13 @@ def run():
             with header:
                 st.header("Customer Annual Spent Prediction")
                 st.write("")  # Space
-                st.caption("""The purpose of this page is to make predictions or forecasts about annual customer spending based on the input data.<br>\
-                We analyze key engagement metrics such as the average duration of sessions on the mobile app and website (Avg_Session_Length), \
-                total usage time of the mobile app (App_Usage), total time spent on the website (Website_Usage), and the length of customer membership \
-                in months (Membership_Length).<br>\
-                This analysis not only predicts each customer's total yearly expenditure but also provides an overview \
-                of data descriptions and feature relationships, highlighting which variables most significantly impact spending predictions. \
-                The information generated will assist the company in making decisions regarding how to utilize their website and existing e-commerce \
+                st.caption("""The purpose of this page is to make predictions or forecasts about annual customer spending based on the input data.
+                We analyze key engagement metrics such as the average duration of sessions on the mobile app and website (Avg_Session_Length),
+                total usage time of the mobile app (App_Usage), total time spent on the website (Website_Usage), and the length of customer membership 
+                in months (Membership_Length).<br>
+                This analysis not only predicts each customer's total yearly expenditure but also provides an overview 
+                of data descriptions and feature relationships, highlighting which variables most significantly impact spending predictions. 
+                The information generated will assist the company in making decisions regarding how to utilize their website and existing e-commerce 
                 application to enhance customer satisfaction and loyalty.""")
 
                 
