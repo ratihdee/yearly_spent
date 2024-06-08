@@ -20,7 +20,7 @@ def create_heat_map(the_df):
         text_auto="0.2f",
         aspect=1,
         color_continuous_scale="PuBu",
-        title="Correlation Heatmap of Data",
+        title="Correlation Matrix",
         height=650,
     )
     fig.update_traces(
@@ -54,7 +54,7 @@ def create_scatter_matrix(the_df):
         height=800,
         color=the_df.iloc[:, -1],
         opacity=0.65,
-        title="Relationships Between Numerical Data",
+        title="Scatter Plot Matrix",
         template="plotly_dark"
 
     )
@@ -70,32 +70,6 @@ def create_scatter_matrix(the_df):
             "bgcolor": "#111",
             "font_size": 14,
             "font_family": "consolas"
-        }
-    )
-    return fig
-
-
-def create_relation_scatter(the_df, x, y):
-
-    fig = px.scatter(
-        data_frame=the_df,
-        x=x,
-        y=y,
-        color=y,
-        opacity=0.78,
-        title="Predicted Vs. Actual",
-        template="plotly_dark",
-        trendline="ols",
-        height=650
-
-    )
-
-    fig.update_layout(
-        title={
-            "font": {
-                "size": 28,
-                "family": "tahoma"
-            }
         }
     )
     return fig
