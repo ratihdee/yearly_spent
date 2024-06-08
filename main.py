@@ -182,13 +182,11 @@ def run():
         )
         st.write("***")
 
-        data_file = st.file_uploader("Upload Your Dataset (CSV)📂", type="csv")
-
-        if data_file is not None:
-            if data_file.name.split(".")[-1].lower() != "csv":
-                st.error("Please, Upload CSV FILE ONLY")
-            else:
-                df = pd.read_csv(data_file)
+                st.caption("""Ratih
+                Vania
+                Athifa
+                Eriska
+                   """)
 
         # Overview Page
         if page == "Overview":
@@ -204,7 +202,15 @@ def run():
                 In addition to obtaining forecast results related to spending on online site transactions, you can check the correlation and data summary. 
                 You can also upload your data on the sidebar menu to view the summary and correlation of your data here!
                    """)
-                        
+
+        data_file = st.file_uploader("Upload Your Dataset (CSV)📂", type="csv")
+
+        if data_file is not None:
+            if data_file.name.split(".")[-1].lower() != "csv":
+                st.error("Please, Upload CSV FILE ONLY")
+            else:
+                df = pd.read_csv(data_file)
+                
                 st.subheader("Data Summary Overview")
                 len_numerical_data = df.select_dtypes(
                     include="number").shape[1]
