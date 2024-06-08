@@ -180,9 +180,9 @@ def run():
             default_index=0,
             styles=side_bar_options_style
         )
-        st.write("***")
+        
 
-        st.caption("""Contact Us:  """)
+        st.subheader("""Contact Us:  """)
         st.caption("""a""")
         st.caption("""cb""")
 
@@ -200,8 +200,9 @@ def run():
                 In addition to obtaining forecast results related to spending on online site transactions, you can check the correlation and data summary. 
                 You can also upload your data on the sidebar menu to view the summary and correlation of your data here!
                    """)
-
-        data_file = st.file_uploader("Upload Your Dataset (CSV)📂", type="csv")
+                
+                st.write("***")
+                data_file = st.file_uploader("Upload Your Dataset (CSV)📂", type="csv")
 
         if data_file is not None:
             if data_file.name.split(".")[-1].lower() != "csv":
