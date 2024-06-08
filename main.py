@@ -180,6 +180,8 @@ def run():
             default_index=0,
             styles=side_bar_options_style
         )
+        st.write("***")  # Space
+        st.write("***")  # Space
         
 
         st.subheader("""Contact Us:  """)
@@ -196,9 +198,8 @@ def run():
                           
                 #st.subheader("What You'll Find Here")
                 st.write("")  # Space
-                st.caption("""This page displays the summary and relationships of the dataset we use as training data to generate accurate forecasts.
-                In addition to obtaining forecast results related to spending on online site transactions, you can check the correlation and data summary. 
-                You can also upload your data on the sidebar menu to view the summary and correlation of your data here!
+                st.caption("""This page provides a summary overview and feature relationships of the dataset you upload, 
+                focusing on predicting annual customer spending for your e-commerce business. Please upload your data in the section below.
                    """)
                 
                 st.write("***")
