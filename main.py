@@ -21,7 +21,7 @@ pd.options.mode.copy_on_write = "warn"
 
 def run():
     st.set_page_config(
-        page_title="Yearly Spent Prediction",
+        page_title="Customer Annual Spent Prediction",
         layout="wide"
     )
 
@@ -170,7 +170,8 @@ def run():
     content = st.container()
 
     with st.sidebar:
-        st.title("SPENT MONEY :blue[PREDICTION]")
+        # st.title("CUSTOMER ANNUAL SPENT : blue[PREDICTION]", #0056B3)
+        st.markdown("<h1 style='color: #0056B3;'>CUSTOMER ANNUAL SPENT PREDICTION</h1>", unsafe_allow_html=True)
         page = option_menu(
             menu_title=None,
             options=['Overview', 'Prediction'],
@@ -193,7 +194,7 @@ def run():
         if page == "Overview":
 
             with header:
-                st.header('Customer Spending Prediction')
+                st.header('Customer Annual Spent Prediction')
 
             with content:
                           
