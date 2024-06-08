@@ -182,7 +182,7 @@ def run():
         )
         #st.write("")  # Space
         #st.write("")  # Space
-        st.markdown('<br><br><br><br><br><br>', unsafe_allow_html=True)  # Adjust the number of <br> for more or less space
+        st.markdown('<br><br><br><br><br>', unsafe_allow_html=True)  # Adjust the number of <br> for more or less space
 
         st.write("***")  # Space
 
