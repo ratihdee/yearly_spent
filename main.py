@@ -110,7 +110,7 @@ def run():
          div [data-testid=stImage]{
             text-align: center;
             display: block;
-            background-color: #F5F5F5;
+            text-color: #FFFFFF;
             margin-left: auto;
             margin-right: auto;
             width: 100%;
