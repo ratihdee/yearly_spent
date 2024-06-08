@@ -174,7 +174,7 @@ def run():
         st.title("SPENT MONEY :blue[PREDICTION]")
         page = option_menu(
             menu_title=None,
-            options=['Home', 'Relations & Correlarions', 'Prediction'],
+            options=['Home', 'Prediction'],
             icons=['diagram-3-fill', 'bar-chart-line-fill', "cpu"],
             menu_icon="cast",
             default_index=0,
