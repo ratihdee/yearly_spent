@@ -234,7 +234,7 @@ def run():
                 st.caption("""The purpose of this page is to make predictions or forecasts about annual customer spending based on the input data.
                 We analyze key engagement metrics such as the average duration of sessions on the mobile app and website (Avg_Session_Length),
                 total usage time of the mobile app (App_Usage), total time spent on the website (Website_Usage), and the length of customer membership 
-                in months (Membership_Length).<br>
+                in months (Membership_Length).
                 This analysis not only predicts each customer's total yearly expenditure but also provides an overview 
                 of data descriptions and feature relationships, highlighting which variables most significantly impact spending predictions. 
                 The information generated will assist the company in making decisions regarding how to utilize their website and existing e-commerce 
