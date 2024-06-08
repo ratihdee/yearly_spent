@@ -22,7 +22,6 @@ pd.options.mode.copy_on_write = "warn"
 def run():
     st.set_page_config(
         page_title="Yearly Spent Prediction",
-        page_icon="💰",
         layout="wide"
     )
 
@@ -78,7 +77,7 @@ def run():
             
          }
          div[data-testid=stSidebarContent] {
-         background-color: #4ea6dd;
+         background-color: #F5F5F5;
          border-right: 4px solid #222;
          padding: 8px!important
          
@@ -157,14 +156,14 @@ def run():
     side_bar_options_style = {
         "container": {"padding": "0!important", "background-color": 'white'},
         "icon": {"color": "black", "font-size": "18px"},
-        "nav-link": {"color": "black", "font-size": "16px", "text-align": "left", "margin": "0px", "margin-bottom": "15px"},
-        "nav-link-selected": {"background-color": "#0079FF", "font-size": "15px"},
+        "nav-link": {"color": "#333333", "font-size": "16px", "text-align": "left", "margin": "0px", "margin-bottom": "15px"},
+        "nav-link-selected": {"background-color": "#0056B3", "font-size": "15px"},
     }
 
     sub_options_style = {
         "container": {"padding": "3!important", "background-color": '#101010', "border": "2px solid #0079FF"},
-        "nav-link": {"color": "white", "padding": "12px", "font-size": "18px", "text-align": "center", "margin": "0px", },
-        "nav-link-selected": {"background-color": "#0079FF"},
+        "nav-link": {"color": "#333333", "padding": "12px", "font-size": "18px", "text-align": "center", "margin": "0px", },
+        "nav-link-selected": {"background-color": "#0056B3"},
 
     }
     header = st.container()
