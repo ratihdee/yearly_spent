@@ -233,9 +233,9 @@ def run():
                 
         if page == "Prediction":
             with header:
-                st.header("Prediction Model")
-                st.subheader("What You'll Find Here")
-                
+                st.header("Customer Annual Spent Prediction")
+                #st.subheader("What You'll Find Here")
+                st.write("")  # Space
                 st.caption("""The purpose of this page is to make predictions or forecasts about annual customer spending based on the input data. \n\
                 We analyze key engagement metrics such as the average duration of sessions on the mobile app and website (Avg_Session_Length), 
                 total usage time of the mobile app (App_Usage), total time spent on the website (Website_Usage), and the length of customer membership 
