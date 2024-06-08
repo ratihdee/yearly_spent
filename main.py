@@ -170,8 +170,8 @@ def run():
     content = st.container()
 
     with st.sidebar:
-        # st.title("CUSTOMER ANNUAL SPENT : blue[PREDICTION]", #0056B3)
-        st.markdown("<h1 style='color: #0056B3;'>CUSTOMER ANNUAL SPENT PREDICTION</h1>", unsafe_allow_html=True)
+        # st.title("CUSTOMER ANNUAL SPENT : blue[PREDICTION]")
+        st.markdown("<h1 style='color: #0056B3; font-weight: bold;'>CUSTOMER ANNUAL SPENT PREDICTION</h1>", unsafe_allow_html=True)
         page = option_menu(
             menu_title=None,
             options=['Overview', 'Prediction'],
