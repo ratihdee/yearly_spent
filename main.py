@@ -171,7 +171,7 @@ def run():
     content = st.container()
 
     with st.sidebar:
-        st.markdown("<h1 style='color: #0056B3; font-weight: bold;'>PREDICTION MENU</h1>", unsafe_allow_html=True)
+        st.markdown("<h1 style='color: #0056B3; font-weight: bold;'>CUSTOMER ANNUAL SPENT PREDICTION</h1>", unsafe_allow_html=True)
         page = option_menu(
             menu_title=None,
             options=['Overview', 'Prediction'],
@@ -180,8 +180,9 @@ def run():
             default_index=0,
             styles=side_bar_options_style
         )
-        st.write("***")  # Space
-        st.write("***")  # Space
+        st.write("")  # Space
+        st.write("")  # Space
+        st.write("")  # Space
         
 
         st.subheader("""Contact Us:  """)
