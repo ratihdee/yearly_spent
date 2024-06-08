@@ -193,15 +193,19 @@ def run():
         if page == "Overview":
 
             with header:
-                st.header('Customer Spending Forecast')
+                st.header('Customer Spending Prediction')
 
             with content:
                           
-                st.subheader("")
+                st.subheader("What You'll Find Here")
                 
-                st.caption("""Ini adalah overview terkini dari data yang telah diinput ke dalam sistem. 
-                   Halaman ini bertujuan untuk melakukan prediksi atau forecast tentang pengeluaran tahunan pelanggan 
-                   berdasarkan data terakhir yang diinput. Informasi ini sangat penting untuk pengambilan keputusan strategis.
+                st.caption("""The purpose of this page is to make predictions or forecasts about annual customer spending based on the latest input data. 
+                We analyze key engagement metrics such as the average duration of sessions on the mobile app and website (Average Session Length), 
+                total usage time of the mobile app (Time on App), total time spent on the website (Time on Website), and the length of customer membership 
+                in months (Length of Membership). This analysis not only predicts each customer's total yearly expenditure but also provides an overview 
+                of data descriptions and feature relationships, highlighting which variables most significantly impact spending predictions. 
+                The information generated will assist the company in making decisions regarding how to utilize their website and existing e-commerce 
+                application to enhance customer satisfaction and loyalty.
                    """)
                         
                 st.subheader("Data Summary Overview")
