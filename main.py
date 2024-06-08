@@ -204,33 +204,33 @@ def run():
                 st.write("***")
                 data_file = st.file_uploader("Upload Your Dataset (CSV)📂", type="csv")
 
-        if data_file is not None:
-            if data_file.name.split(".")[-1].lower() != "csv":
-                st.error("Please, Upload CSV FILE ONLY")
-            else:
-                df = pd.read_csv(data_file)
-                
-                st.subheader("Data Summary Overview")
-                len_numerical_data = df.select_dtypes(
-                    include="number").shape[1]
-                len_string_data = df.select_dtypes(include="object").shape[1]
-
-                if len_numerical_data > 0:
-                    data_stats = df.describe().T
-                    st.table(data_stats)
-
-                if len_string_data > 0:
-                    data_stats = df.select_dtypes(
-                        include="object").describe().T
-                    st.table(data_stats)
-
-                st.subheader("Features Correlation")
-
-                st.plotly_chart(relations.create_heat_map(df),
-                                use_container_width=True)
-
-                st.plotly_chart(relations.create_scatter_matrix(
-                    df), use_container_width=True)
+            if data_file is not None:
+                if data_file.name.split(".")[-1].lower() != "csv":
+                    st.error("Please, Upload CSV FILE ONLY")
+                else:
+                    df = pd.read_csv(data_file)
+                    
+                    st.subheader("Data Summary Overview")
+                    len_numerical_data = df.select_dtypes(
+                        include="number").shape[1]
+                    len_string_data = df.select_dtypes(include="object").shape[1]
+    
+                    if len_numerical_data > 0:
+                        data_stats = df.describe().T
+                        st.table(data_stats)
+    
+                    if len_string_data > 0:
+                        data_stats = df.select_dtypes(
+                            include="object").describe().T
+                        st.table(data_stats)
+    
+                    st.subheader("Features Correlation")
+    
+                    st.plotly_chart(relations.create_heat_map(df),
+                                    use_container_width=True)
+    
+                    st.plotly_chart(relations.create_scatter_matrix(
+                        df), use_container_width=True)
                 
         if page == "Prediction":
             with header:
