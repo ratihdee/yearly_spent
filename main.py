@@ -182,14 +182,15 @@ def run():
         )
         #st.write("")  # Space
         #st.write("")  # Space
-        #st.write("")  # Space
         st.markdown('<br><br><br><br><br><br>', unsafe_allow_html=True)  # Adjust the number of <br> for more or less space
 
-        
+        st.write("***")  # Space
 
         st.subheader("""Contact Us:  """)
-        st.caption("""a""")
-        st.caption("""cb""")
+        st.caption("""Vania Nita <vania.nita@office.ui.ac.id>""")
+        st.caption("""Ratih Dewi Herawati <ratih.dewi31@office.ui.ac.id>""")
+        st.caption("""Athifa Fajri Fahmawati <athifa.fajri@office.ui.ac.id>""")
+        st.caption("""Eriska Lisandia <eriska.lisandia31@office.ui.ac.id>""")
 
         # Overview Page
         if page == "Overview":
