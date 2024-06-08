@@ -21,7 +21,7 @@ def create_heat_map(the_df):
         aspect=1,
         color_continuous_scale="PuBu",
         title="Correlation Matrix",
-        height=300,
+        height=650,
     )
     fig.update_traces(
         textfont={
@@ -33,7 +33,7 @@ def create_heat_map(the_df):
     fig.update_layout(
         title={
             "font": {
-                "size": 30,
+                "size": 20,
                 "family": "tahoma"
             }
         },
@@ -51,7 +51,7 @@ def create_scatter_matrix(the_df):
     fig = px.scatter_matrix(
         the_df,
         dimensions=the_df.select_dtypes(include="number").columns,
-        height=300,
+        height=800,
         color=the_df.iloc[:, -1],
         opacity=0.65,
         title="Scatter Plot Matrix",
@@ -62,7 +62,7 @@ def create_scatter_matrix(the_df):
     fig.update_layout(
         title={
             "font": {
-                "size": 30,
+                "size": 20,
                 "family": "tahoma"
             }
         },
