@@ -219,26 +219,6 @@ def run():
 
                 st.plotly_chart(relations.create_scatter_matrix(
                     df), use_container_width=True)
-
-                st.write("***")
-                col1, col2 = st.columns(2)
-                with col1:
-                    first_feature = st.selectbox(
-                        "First Feature", options=(df.select_dtypes(
-                            include="number").columns.tolist()), index=0).strip()
-
-                temp_columns = df.select_dtypes(
-                    include="number").columns.to_list().copy()
-
-                temp_columns.remove(first_feature)
-
-                with col2:
-                    second_feature = st.selectbox(
-                        "Second Feature", options=(temp_columns), index=0).strip()
-
-                st.plotly_chart(relations.create_relation_scatter(
-                    df, first_feature, second_feature), use_container_width=True)
-
                 
         if page == "Prediction":
             with header:
