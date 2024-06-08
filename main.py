@@ -199,7 +199,7 @@ def run():
                           
                 #st.subheader("What You'll Find Here")
                 st.write("")  # Space
-                st.caption("""This page displays the summary and relationships of the dataset we use as training data to generate accurate forecasts. <br>\
+                st.caption("""This page displays the summary and relationships of the dataset we use as training data to generate accurate forecasts. /n
                 In addition to obtaining forecast results related to spending on online site transactions, you can check the correlation and data summary. 
                 You can also upload your data on the sidebar menu to view the summary and correlation of your data here!
                    """)
