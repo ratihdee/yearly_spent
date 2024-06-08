@@ -143,9 +143,9 @@ def run():
 
         div[data-testid=stFormSubmitButton]> button:hover{
             opacity: 1;
-            background-color: #F5F5F5;
+            background-color: #0056B3;
             border: 2px solid #0079FF;
-            color: #0056B3
+            color: #FFFFFF
         }
 
 
