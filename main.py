@@ -204,19 +204,15 @@ def run():
                 len_string_data = df.select_dtypes(include="object").shape[1]
 
                 if len_numerical_data > 0:
-                    st.subheader("Numerical Data")
-
                     data_stats = df.describe().T
                     st.table(data_stats)
 
                 if len_string_data > 0:
-                    st.subheader("String Data")
-
                     data_stats = df.select_dtypes(
                         include="object").describe().T
                     st.table(data_stats)
 
-                st.subheader("Relation & Correlations")
+                st.subheader("Correlation Matrix")
 
                 st.plotly_chart(relations.create_heat_map(df),
                                 use_container_width=True)
