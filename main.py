@@ -118,8 +118,7 @@ def run():
         div[data-baseweb=select]>div{
             cursor: pointer;
             background-color: #F5F5F5;
-            border: 2px solid #0079FF;
-            color: #FFFFFF
+            border: 2px solid #0079FF
         }
 
         div[data-baseweb=base-input]{
@@ -163,9 +162,9 @@ def run():
     }
 
     sub_options_style = {
-        "container": {"padding": "3!important", "background-color": '#333333', "border": "2px solid #0079FF"},
-        "nav-link": {"color": "#333333", "padding": "12px", "font-size": "18px", "text-align": "center", "margin": "0px", },
-        "nav-link-selected": {"background-color": "#0056B3"},
+        "container": {"padding": "3!important", "background-color": '#101010', "border": "2px solid #0079FF"},
+        "nav-link": {"color": "white", "padding": "12px", "font-size": "18px", "text-align": "center", "margin": "0px", },
+        "nav-link-selected": {"background-color": "#0079FF"},
 
     }
     header = st.container()
