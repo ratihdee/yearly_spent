@@ -117,7 +117,7 @@ def run():
 
         div[data-baseweb=select]>div{
             cursor: pointer;
-            background-color: #111;
+            background-color: #F5F5F5;
             border: 2px solid #0079FF;
         }
 
