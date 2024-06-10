@@ -245,8 +245,6 @@ def run():
                 We analyze key engagement metrics such as the average duration of sessions on the mobile app and website (Avg_Session_Length),
                 total usage time of the mobile app (App_Usage), total time spent on the website (Website_Usage), and the length of customer membership 
                 in months (Membership_Length).
-                This analysis not only predicts each customer's total yearly expenditure but also provides an overview 
-                of data descriptions and feature relationships, highlighting which variables most significantly impact spending predictions. 
                 The information generated will assist the company in making decisions regarding how to utilize their website and existing e-commerce 
                 application to enhance customer satisfaction and loyalty.""")
 
@@ -263,10 +261,10 @@ def run():
                             session_length = st.number_input(label="Average Session Length (Minute)",
                                                              min_value=5.0, max_value=50.0, value=30.0,
                                                              )
-                            web_usage_length = st.number_input(label="Time of Website (Minute)",
+                            web_usage_length = st.number_input(label="Time on Website (Minute)",
                                                                min_value=10.0,  value=30.0)
                         with c2:
-                            app_usage_length = st.number_input(label="Time of APP (Minute)",
+                            app_usage_length = st.number_input(label="Time on Application (Minute)",
                                                                min_value=8.0, max_value=30.0, value=15.0)
                             membership_length = st.number_input(label="Membership Length (Months)",
                                                                 min_value=1.0, value=2.0)
